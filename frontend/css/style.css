@@ -255,7 +255,7 @@ section {
   text-align: center;
   background: transparent;
   color: #fff;
-  width: 250px;
+  width: 300px;
   border: 2px solid #fff;
   height: 50px;
   display: flex;
@@ -285,7 +285,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--accent-color);
+  background: rgba(255,235,59,.75);
   border-radius: 5px;
 }
 
