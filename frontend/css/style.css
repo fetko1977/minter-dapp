@@ -144,12 +144,6 @@ header .container {
 .wallet-btn:hover {
   background: #fff;
   color: #00163f;
-  width: 200px;
-  border: 2px solid #fff;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-btn {
