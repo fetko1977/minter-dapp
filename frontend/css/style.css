@@ -24,7 +24,8 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background: url('../images/background.jpg') no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -45,14 +46,18 @@ body {
 /* HEADER */
 
 header {
-  background-color: var(--bg-color);
-  box-shadow: var(--header-shadow);
+  
 }
 
 header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo a img {
+  max-width: 100px;
+  width: 100%;
 }
 
 .menu {
