@@ -248,6 +248,20 @@ section {
   text-align: center;
 }
 
+.countdown .btn.hero-btn {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  width: 250px;
+  border: 2px solid #fff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* MINT CONTAINER */
 
 .mint-container {
