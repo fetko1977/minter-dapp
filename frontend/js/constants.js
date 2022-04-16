@@ -1,7 +1,7 @@
 const contractAddress = "0x10271E6585D8a6bd0E25Eb5Be8cEc059B94B06d8"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the eMojo NFT Project!";
+const welcome_h1 = "eMojo Collection";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p = 'The eMojo NFT Project is inspired by the emojis. eMojo is a character full of emotions.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
