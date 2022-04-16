@@ -14,7 +14,7 @@
   --btn-bg-color: #ffffff;
   --accent-color: #be7efe;
   --header-shadow: var(--accent-color) 0px 0px 5px;
-  --card-shadow: var(--accent-color) 0px 0px 20px;
+  --card-shadow: black 0px 0px 20px;
 }
 
 * {
@@ -156,9 +156,8 @@ header .container {
 
 .card {
   position: relative;
-  background-color: var(--bg-color);
-  border-radius: 5px;
-  border: 3px solid var(--accent-color);
+  background-color: rgba(0,0,0,0.5);
+  border: 3px solid white;
   box-shadow: var(--card-shadow);
   padding: 5rem;
   margin-bottom: 2rem;
