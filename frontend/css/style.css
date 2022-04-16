@@ -199,17 +199,18 @@ section {
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color);
-  color: var(--font-color);
+  background: rgb(255 235 59 / 75%);
+  color: white;
   font-size: 2rem;
   font-weight: 700;
-  font-family: var(--font-secondary);
+  font-family: 'Poppins', sans-serif;
   padding: 1rem;
   display: inline-block;
   width: 100%;
   text-align: center;
   line-height: 1;
   border-radius: 4px 4px 0 0;
+  text-shadow: 2px 2px 1px rgb(0 0 0 / 70%);
 }
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
