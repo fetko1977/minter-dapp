@@ -65,10 +65,10 @@ const ROYALTY_SHARE = 700; // Percentage of the token price that goes to the roy
 const ROYALTY_ADDRESS = "0xEFbc0a1e06dfB32c1e0bB4c81E68b812Dc3d6292"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ['0xEFbc0a1e06dfB32c1e0bB4c81E68b812Dc3d6292']; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x3Ef4d39b833a32fC35b5afFE0567E56a0f76a3E6"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0xce8561002b7c65c85F2a4e90a000605B371802fB"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
