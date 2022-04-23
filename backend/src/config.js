@@ -36,7 +36,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://emojo.space/", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -53,7 +53,7 @@ const METADATA_UPDATABLE = true; // set to false if you don't want to allow meta
 const OWNER_ADDRESS = '0xEFbc0a1e06dfB32c1e0bB4c81E68b812Dc3d6292';
 const TREASURY_ADDRESS = '0xEFbc0a1e06dfB32c1e0bB4c81E68b812Dc3d6292';
 const MAX_SUPPLY = 1000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 5; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 7; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
@@ -65,10 +65,10 @@ const ROYALTY_SHARE = 700; // Percentage of the token price that goes to the roy
 const ROYALTY_ADDRESS = "0xEFbc0a1e06dfB32c1e0bB4c81E68b812Dc3d6292"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ['0xEFbc0a1e06dfB32c1e0bB4c81E68b812Dc3d6292']; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x3Ef4d39b833a32fC35b5afFE0567E56a0f76a3E6"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0xa9EdD57F775E0855Bb6c90bF00BB5eA0f064b994"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
