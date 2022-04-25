@@ -322,12 +322,18 @@ async function mint() {
         console.log("Failed to mint!");
       }
     } catch(e) {
-      const mainText = document.getElementById("mainText");
-      mainText.innerText = mint_failed;
+      // On fail we open modal and show the error and help diagram
+        // mintFailedModal
+        var myModal = new bootstrap.Modal(document.getElementById('mintFailedModal'), {
+          keyboard: false
+        });
+        myModal.show();
+      // const mainText = document.getElementById("mainText");
+      // mainText.innerText = mint_failed;
       mintButton.innerText = button_public_mint;
       mintButton.disabled = false;
 
-      console.log(e);
+      // console.log(e);
     }
   } else if (presaleMintActive) {
     // PRE-SALE MINTING

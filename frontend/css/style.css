@@ -432,6 +432,55 @@ section {
   display: none;
 }
 
+/* Modal style reset */
+.modal.show .modal-dialog {
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal.show .modal-dialog .modal-icon {
+  font-size: 50px;
+}
+
+
+.modal-box .close {
+  display: inline-flex;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgb(65, 0, 105);
+  z-index: 1;
+}
+
+.modal-box .cancel {
+    display: block;
+    margin: auto;
+}
+
+.modal-box .cancel:hover {
+  border: 1px solid rgb(65, 0, 105);
+}
+
+.modal-box .modal-content {
+  color: rgb(65, 0, 105);
+  position: relative;
+}
+
+.modal-box img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 20px auto;
+}
+@media only screen and (max-width: 767px){
+    .modal-dialog{ width: 85% !important; }
+
 /** RESPONSIVE */
 @media only screen and (max-width: 600px) {
   .container {
