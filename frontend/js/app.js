@@ -61,7 +61,6 @@ const updateConnectStatus = async () => {
     notConnected.classList.add('hidden');
     // SHOW SPINNER
     spinner.classList.remove('hidden');
-    spinnerText.classList.remove('hidden');
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
