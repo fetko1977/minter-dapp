@@ -302,16 +302,17 @@ async function mint() {
         .mint(amount)
         .send({ from: window.address, value: value.toString() });
       if(mintTransaction) {
-        if(chain === 'rinkeby') {
-          const url = `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}`;
+          // we build here url for view transaction button depends on the chain - rinkeby / polygon
+          const url = chain === 'rinkeby' ? `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}` :
+            `https://polygonscan.com/tx/${mintTransaction.transactionHash}`;
+
           const mintedContainer = document.querySelector('.minted-container');
           const countdownContainer = document.querySelector('.countdown');
           const mintedTxnBtn = document.getElementById("mintedTxnBtn");
           mintedTxnBtn.href = url;
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
-        }
-        console.log("Minuted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
+          console.log("Minuted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
         mainText.innerText = mint_failed;
@@ -321,12 +322,18 @@ async function mint() {
         console.log("Failed to mint!");
       }
     } catch(e) {
-      const mainText = document.getElementById("mainText");
-      mainText.innerText = mint_failed;
+      // On fail we open modal and show the error and help diagram
+        // mintFailedModal
+        var myModal = new bootstrap.Modal(document.getElementById('mintFailedModal'), {
+          keyboard: false
+        });
+        myModal.show();
+      // const mainText = document.getElementById("mainText");
+      // mainText.innerText = mint_failed;
       mintButton.innerText = button_public_mint;
       mintButton.disabled = false;
 
-      console.log(e);
+      // console.log(e);
     }
   } else if (presaleMintActive) {
     // PRE-SALE MINTING

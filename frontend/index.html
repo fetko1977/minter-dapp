@@ -25,6 +25,7 @@
       href="images/x-icon/favicon-16x16.png"
     />
     <link rel="manifest" href="images/x-icon/manifest" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/three-dots.min.css" />
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -37,6 +38,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@600&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta property="og:title" content="eMojo Collection">
+    <meta property="og:site_name" content="eMojo Collection">
+    <meta property="og:url" content="https://emojo.space/">
+    <meta property="og:description" content="eMojo Collection is inspired by the emojis. eMojo is a character hiding different emotions. The total eMojo's in the collection is 1000. Each one is unique.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://emojo.space/images/logo.png">
   </head>
   <body>
     <header>
@@ -47,27 +58,27 @@
           </a>
         </div>
         <div class="menu">
-          <!-- <a
-            href="https://discord.gg/A9CnsVzzkZ"
+          <a
+            href="https://discord.com/channels/964983053879480381/964983055284596746"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src="images/header/discord.webp" alt="Discord" />
           </a>
-          <a
+          <!-- <a
             href="https://twitter.com/codeSTACKr"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src="images/header/twitter.webp" alt="Twitter" />
-          </a>
+          </a> -->
           <a
-            href="https://opensea.io/collection/codecats"
+            href="https://opensea.io/collection/emojocollection"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src="images/header/opensea.webp" alt="Opensea" />
-          </a> -->
+          </a>
           <button class="wallet-btn btn" id="connectWallet">
             <span>Connect Wallet</span>
           </button>
@@ -78,9 +89,9 @@
     <section class="container not-connected">
       <div>
         <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
-        <h1 id="welcomeH1">Welcome to the CodeCats NFT Project!</h1>
+        <h1 id="welcomeH1">Welcome to eMojo Collection NFT Project!</h1>
         <p id="welcomeP">
-          The CodeCats NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection. Follow step by step on the <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">codeSTACKr</a> YouTube channel.
+            eMojo Collection is NFT Collection inspired by the emojis. But we look at our eMojo as one character that is hiding 1000 of emotions.
         </p>
       </div>
     </section>
@@ -214,7 +225,60 @@
         </ul>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal-box">
+        <!-- Modal -->
+        <div class="modal fade" id="mintFailedModal" tabindex="-1" role="dialog" aria-labelledby="mintFailedModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content clearfix">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-content clearfix">
+                        <div class="modal-body">
+                            <h3 class="title">Mint failed 😭</h3>
+                            <div class="modal-icon">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <p class="description">But hey don't worry 😉 ! We still can find a way to mint your eMojo 😎</p>
+                            <p class="description">The most common reason for mint to fail, is because minting transaction most probably failing. 
+                  This is happening, because the network is overloaded. 😢</p>
+                            <p class="description">So you have two options 🤔 - Either you wait for better network, or you pay a bit more gas fee using Site suggested options, but your transaction is happening faster and not failing 😀</p>
 
+                            <img src="images/mint_failing_networx_busy.jpg" alt="Mint failed" />
+                            <button type="button" class="btn cancel" data-bs-dismiss="modal" aria-label="Close">
+                              Ok, got it...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal-box">
+        <div class="modal fade" id="mintFailedModal" tabindex="-1" aria-labelledby="mintFailedModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="mintFailedModalLabel">Mint failed 😭</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>But hey don't worry 😉 ! We still can find a way to mint your eMojo 😎</p>
+                <p>The most common reason for mint to fail, is because minting transaction most probably failing. 
+                  This is happening, because the network is overloaded and you will need to pay a bit mor gas so transaction to pass.</p>
+                <img src="images/mint_failing_networx_busy.jpg" alt="Mint failed" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/metamask-onboarding.bundle.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/splide.min.js"></script>
