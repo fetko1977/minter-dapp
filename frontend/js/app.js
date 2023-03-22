@@ -304,7 +304,7 @@ async function mint() {
     try {
       const mintTransaction = await contract.methods
         .mint(amount)
-        .send({ from: window.address, value: value.toString(), gasPrice: '40000000000' });
+        .send({ from: window.address, value: value.toString(), gasPrice: '50000000000' });
       if(mintTransaction) {
           // we build here url for view transaction button depends on the chain - rinkeby / polygon
           const url = chain === 'rinkeby' ? `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}` :
